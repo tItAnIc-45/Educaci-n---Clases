@@ -16,6 +16,6 @@
 - [ ] D01 (Responsive): Probado en móvil, tablet y escritorio sin cortes ni desbordes.
 - [ ] I03 (Privacidad): Formularios con validación adecuada y recolección mínima de datos.
 - [ ] Publicación: La acción de despliegue (GitHub Actions) finaliza en verde y el sitio abre íntegramente en la URL publicada.
-
+- [ ] Lint: npm ci y npm run lint con 0 errores y 0 advertencias
 ### Evidencia de pruebas
 <!-- Pega aquí capturas de pantalla de la prueba en local ('npm run dev'), build limpio ('npm run build') o prueba visual en navegador -->
