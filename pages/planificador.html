@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planificador | TUPLUSEDUCA</title>
+<meta name="description" content="Calcula tu fecha de término y tus cuotas.">
+<link rel="icon" href="../assets/colibri-mini.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas.css">
+<link rel="stylesheet" href="../css/animaciones.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<script>try{var t=localStorage.getItem("tema")||(matchMedia("(prefers-color-scheme: light)").matches?"claro":"oscuro");document.documentElement.dataset.tema=t;if(sessionStorage.getItem("tp-trans"))document.documentElement.classList.add("llega")}catch(e){document.documentElement.dataset.tema="oscuro"}</script>
+</head>
+<body data-pagina="planificador" data-raiz="../">
+<main>
+  <section class="cabecera">
+    <p class="migas"><a href="../index.html">Inicio</a> / Planificador de estudio</p>
+    <h1>Planificador de estudio</h1>
+    <p class="lead">Elige un programa y cuántas horas tienes por semana. Calculamos cuándo terminas y cuánto pagas por cuota.</p>
+  </section>
+  <section class="seccion">
+    <div class="plan">
+      <div class="panel">
+        <label for="pl-prog">Programa</label><select id="pl-prog"></select>
+        <label for="pl-horas">Horas por semana: <output id="pl-h" for="pl-horas">5 horas</output></label>
+        <input id="pl-horas" type="range" min="2" max="15" value="5">
+        <label for="pl-inicio">Fecha de inicio</label><input id="pl-inicio" type="date">
+        <label for="pl-cuotas">Forma de pago</label>
+        <select id="pl-cuotas"><option value="1">1 pago</option><option value="3">3 cuotas</option><option value="6">6 cuotas</option></select>
+      </div>
+      <div class="panel" aria-live="polite">
+        <div class="kpis">
+          <div class="kpi"><b id="pl-sem">0</b><span>semanas</span></div>
+          <div class="kpi"><b id="pl-tot">0 h</b><span>de estudio en total</span></div>
+          <div class="kpi"><b id="pl-fin" style="font-size:18px">–</b><span>fin estimado</span></div>
+          <div class="kpi"><b id="pl-cuota" style="font-size:20px">–</b><span>pago</span></div>
+        </div>
+        <ol class="semanas" id="pl-lista"></ol>
+        <div class="acc">
+          <button class="boton" id="pl-ics">Agregar al calendario</button>
+          <button class="boton sec" id="pl-txt">Descargar plan</button>
+          <button class="boton sec" id="pl-copiar">Copiar plan</button>
+          <a class="boton sec" id="pl-ins" href="contacto.html">Inscribirme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../js/datos.js"></script>
+<script src="../js/utilidades.js"></script>
+<script src="../js/colibri.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/comun.js"></script>
+<script src="../js/planificador.js"></script>
+</body>
+</html>

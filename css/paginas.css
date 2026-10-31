@@ -1,0 +1,38 @@
+/* TUPLUSEDUCA · paginas.css */
+.hero{min-height:600px;padding:80px 9%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;background:radial-gradient(ellipse at 80% 45%,#2a527366,transparent 50%),var(--fondo);overflow:hidden}
+h1{font-size:clamp(40px,5vw,66px);animation:entra .9s both}
+.lead{color:var(--sec);max-width:500px;margin:24px 0 30px;font-size:17px}
+.botones{display:flex;gap:14px;flex-wrap:wrap}
+.estudiantes{margin-top:34px;display:flex;flex-direction:column;font-size:14px}
+.estudiantes small{color:var(--sec)}
+.hero-visual{min-height:400px;display:grid;place-items:center;position:relative;perspective:800px}
+.libro{width:240px;height:300px;border:1px solid #e8bd4380;border-radius:14px;background:linear-gradient(145deg,#2b526d,#10283d);box-shadow:15px 25px 60px #0007;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#f5f2e9;transform:rotate(-7deg) rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .15s;animation:flotar 4s ease-in-out infinite}
+.libro span{letter-spacing:5px;font-size:13px}
+.libro strong{font-size:120px;line-height:1;color:#e8bd43;font-family:'Fraunces',serif}
+.libro small{color:#9fb2c4}
+.tarjeta{position:absolute;padding:14px 18px;background:var(--panel);border:1px solid var(--borde);border-radius:10px;box-shadow:0 14px 32px var(--sombra);font-size:14px;font-weight:500}
+.tarjeta small{display:block;color:var(--sec);font-weight:400}
+.t1{top:2%;right:0;animation:flotar2 5s ease-in-out infinite}
+.t2{bottom:10%;left:0;animation:flotar2 6s ease-in-out infinite reverse}
+.estadisticas{background:var(--oscuro);display:grid;grid-template-columns:repeat(4,1fr);padding:34px 6%;text-align:center;border-block:1px solid var(--borde)}
+.estadisticas div+div{border-left:1px solid var(--borde)}
+.estadisticas strong{display:block;color:var(--dorado);font:700 38px/1.2 'Fraunces',serif}
+.estadisticas small{color:var(--sec);font-size:14px}
+.contacto{padding:80px 9%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px;background:linear-gradient(110deg,#122a40,#1a4560);color:#f5f2e9}
+.contacto p:not(.etiqueta){color:#b9c9d8;margin-top:16px}
+.contacto .etiqueta,.contacto h2 span{color:#e8bd43}
+footer{padding:28px 6%;background:var(--oscuro);display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+footer p,footer small{color:var(--sec);font-size:14px}
+.rota{font:500 20px 'Fraunces',serif;margin-top:18px;color:var(--sec)}
+.rota b{color:var(--dorado)}
+.cuenta{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:34px 9%;background:linear-gradient(100deg,#0b192c,#173a58);border-bottom:1px solid var(--borde)}
+.cuenta .etiqueta{margin-bottom:2px}
+.cuenta h3{margin:0;color:#f8fafc;font-size:24px}
+.reloj{display:flex;gap:12px}
+.reloj span{display:grid;place-items:center;min-width:72px;padding:10px 6px;border:1px solid #d4af3766;border-radius:10px;background:#06111e99;color:#9fb2c4;font-size:12px;line-height:1.3}
+.reloj b{color:#d4af37;font:700 28px 'Fraunces',serif}
+.hero-visual .libro{width:200px;height:250px;margin:190px 0 0 150px}
+.hero-visual .libro strong{font-size:90px}
+
+.destacados{margin-top:36px}
+.test-cta{margin-top:0}

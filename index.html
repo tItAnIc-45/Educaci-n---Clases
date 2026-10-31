@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprende sin límites | TUPLUSEDUCA</title>
+<meta name="description" content="Cursos online de tecnología, creatividad y negocios. Aprende haciendo, a tu ritmo.">
+<link rel="icon" href="assets/colibri-mini.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/componentes.css">
+<link rel="stylesheet" href="css/paginas.css">
+<link rel="stylesheet" href="css/animaciones.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{var t=localStorage.getItem("tema")||(matchMedia("(prefers-color-scheme: light)").matches?"claro":"oscuro");document.documentElement.dataset.tema=t;if(sessionStorage.getItem("tp-trans"))document.documentElement.classList.add("llega")}catch(e){document.documentElement.dataset.tema="oscuro"}</script>
+</head>
+<body data-pagina="inicio" data-raiz="">
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <p class="etiqueta">Cursos online para crecer</p>
+      <h1>Tu futuro empieza con una idea. <span>La tuya.</span></h1>
+      <p class="rota">Hoy quiero aprender <b id="rota"></b><i class="cursor">|</i></p>
+      <p class="lead">Aprende habilidades que el mercado pide, con proyectos reales y docentes que te acompañan. Estudia desde donde quieras, a tu ritmo.</p>
+      <div class="botones">
+        <a href="pages/programas.html" class="boton">Ver programas</a>
+        <a href="pages/test.html" class="boton sec">Descubre tu programa</a>
+      </div>
+      <div class="estudiantes"><strong>+12,000 estudiantes</strong><small>ya están construyendo su futuro</small></div>
+    </div>
+    <div class="hero-visual" id="visual">
+      <button class="colibri-btn" id="saludo" aria-label="Saludar al colibrí"><img class="colibri" id="colibriHero" src="assets/colibri.png" alt="Colibrí dorado de TUPLUSEDUCA" width="270" height="227"></button>
+      <div class="libro" aria-hidden="true"><span>APRENDE</span><strong>∞</strong><small>Crece, crea, logra</small></div>
+      <div class="tarjeta t1">✦ Aprendizaje flexible<small>A tu propio ritmo</small></div>
+      <div class="tarjeta t2">✓ Educación de calidad<small>Impulsa tu futuro</small></div>
+    </div>
+  </section>
+
+  <section class="estadisticas">
+    <div><strong data-n="12000" data-s="+">0</strong><small>Estudiantes</small></div>
+    <div><strong data-n="85" data-s="+">0</strong><small>Cursos</small></div>
+    <div><strong data-n="96" data-s="%">0</strong><small>Satisfacción</small></div>
+    <div><strong data-n="40" data-s="+">0</strong><small>Docentes</small></div>
+  </section>
+
+  <section class="cuenta" id="cuenta">
+    <div><p class="etiqueta">Próxima cohorte</p><h3>Las clases comienzan en</h3></div>
+    <div class="reloj" role="timer" aria-live="off"><span><b id="cd-d">0</b>días</span><span><b id="cd-h">0</b>horas</span><span><b id="cd-m">0</b>min</span><span><b id="cd-s">0</b>seg</span></div>
+    <a href="pages/contacto.html" class="boton">Reservar mi cupo</a>
+  </section>
+
+  <section class="seccion" id="nosotros">
+    <p class="etiqueta">Nuestra esencia</p>
+    <h2>Aprende con propósito. <span>Crece sin límites.</span></h2>
+    <p class="descripcion">En TUPLUSEDUCA creemos que aprender es el punto de partida para crear oportunidades. Te damos recursos prácticos y herramientas digitales para avanzar.</p>
+    <div class="ventajas">
+      <article><i>◆</i><h3>Aprende haciendo</h3><p>Practica con proyectos reales desde la primera semana.</p></article>
+      <article><i>◐</i><h3>Docentes expertos</h3><p>Profesionales en actividad que te guían y resuelven tus dudas.</p></article>
+      <article><i>◷</i><h3>A tu ritmo</h3><p>Organiza tus horarios y estudia desde cualquier lugar.</p></article>
+      <article><i>▲</i><h3>Crece profesionalmente</h3><p>Certificado y portafolio para mostrar lo que sabes hacer.</p></article>
+    </div>
+    <a class="enlace-flecha" href="pages/nosotros.html">Conoce nuestra historia →</a>
+  </section>
+
+  <section class="seccion programas">
+    <p class="etiqueta">Programas destacados</p>
+    <h2>Empieza por <span>donde más te guste.</span></h2>
+    <div class="cursos destacados" id="destacados"></div>
+    <a class="enlace-flecha" href="pages/programas.html">Ver los 6 programas →</a>
+  </section>
+
+  <section class="seccion">
+    <div class="cta test-cta">
+      <div><h2>¿No sabes por dónde empezar?</h2><p>Responde 3 preguntas y te recomendamos un programa.</p></div>
+      <a class="boton" href="pages/test.html">Hacer el test</a>
+    </div>
+  </section>
+
+  <section class="seccion programas" id="historias">
+    <p class="etiqueta">Historias reales</p>
+    <h2>Lo que dicen <span>nuestros estudiantes.</span></h2>
+    <div class="carrusel" aria-roledescription="carrusel">
+      <div class="pista" id="pista">
+        <figure><blockquote>Empecé sin saber nada de código y hoy publiqué la web de mi negocio. Los proyectos reales hicieron la diferencia.</blockquote><figcaption><b>María P.</b> · Desarrollo web</figcaption></figure>
+        <figure><blockquote>Estudio de noche, después del trabajo. Poder avanzar a mi ritmo me permitió terminar el programa.</blockquote><figcaption><b>Jorge L.</b> · Marketing digital</figcaption></figure>
+        <figure><blockquote>Armé mi portafolio de diseño en tres meses y ya tengo mis primeros clientes.</blockquote><figcaption><b>Camila R.</b> · Diseño gráfico</figcaption></figure>
+      </div>
+      <div class="ctrl"><button class="icono" id="prev" aria-label="Anterior">‹</button><div id="puntos" class="puntos"></div><button class="icono" id="next" aria-label="Siguiente">›</button></div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="cta">
+      <div><h2>Todo gran cambio empieza con aprender.</h2><p>Déjanos tus datos y te enviamos la información del programa que elijas.</p></div>
+      <a class="boton" href="pages/contacto.html">Quiero información</a>
+    </div>
+  </section>
+</main>
+
+<script src="js/datos.js"></script>
+<script src="js/utilidades.js"></script>
+<script src="js/colibri.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/comun.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>
