@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | TUPLUSEDUCA</title>
+<meta name="description" content="Escríbenos para inscribirte o resolver tus dudas.">
+<link rel="icon" href="../assets/colibri-mini.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas.css">
+<link rel="stylesheet" href="../css/animaciones.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<script>try{var t=localStorage.getItem("tema")||(matchMedia("(prefers-color-scheme: light)").matches?"claro":"oscuro");document.documentElement.dataset.tema=t;if(sessionStorage.getItem("tp-trans"))document.documentElement.classList.add("llega")}catch(e){document.documentElement.dataset.tema="oscuro"}</script>
+</head>
+<body data-pagina="contacto" data-raiz="../">
+<main>
+  <section class="cabecera">
+    <p class="migas"><a href="../index.html">Inicio</a> / Contacto</p>
+    <h1>Contacto</h1>
+    <p class="lead">Cuéntanos qué quieres aprender y un asesor te escribirá para confirmar tu inscripción.</p>
+  </section>
+  <section class="contacto" id="contacto">
+    <div>
+      <p class="etiqueta">El futuro comienza hoy</p>
+      <h2>Todo gran cambio empieza con <span>aprender.</span></h2>
+      <div class="info">
+        <div><span><small>Correo</small>hola@tupluseduca.com</span><button data-copiar="hola@tupluseduca.com">Copiar</button></div>
+        <div><span><small>WhatsApp</small>+51 999 999 999</span><button data-copiar="+51 999 999 999">Copiar</button></div>
+        <div><span><small>Horario</small>Lunes a sábado, 9:00 a 19:00</span></div>
+      </div>
+    </div>
+    <form id="formulario" novalidate>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre completo">
+      <small class="error" data-e="nombre"></small>
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tu@correo.com">
+      <small class="error" data-e="correo"></small>
+      <label for="programa">Programa de interés</label>
+      <select id="programa" name="programa"><option value="">Elige un programa</option></select>
+      <small class="error" data-e="programa"></small>
+      <button class="boton" type="submit">Quiero información</button>
+    </form>
+  </section>
+  <section class="seccion" id="preguntas">
+    <p class="etiqueta">Resolvemos tus dudas</p>
+    <h2>Preguntas <span>frecuentes.</span></h2>
+    <div class="faq">
+      <details><summary>¿Necesito experiencia previa?</summary><p>No. Los programas de nivel inicial parten desde cero y avanzan paso a paso.</p></details>
+      <details><summary>¿Cuánto tiempo debo dedicar por semana?</summary><p>Con 4 a 6 horas semanales puedes completar cualquier programa en el tiempo indicado. Puedes calcularlo en el <a href="planificador.html" style="color:var(--dorado)">planificador</a>.</p></details>
+      <details><summary>¿Recibo un certificado?</summary><p>Sí. Al terminar el programa y entregar tu proyecto final recibes un certificado digital.</p></details>
+      <details><summary>¿Cómo me inscribo?</summary><p>Elige un programa, completa el formulario y un asesor te escribirá para confirmar.</p></details>
+    </div>
+  </section>
+</main>
+
+<script src="../js/datos.js"></script>
+<script src="../js/utilidades.js"></script>
+<script src="../js/colibri.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/comun.js"></script>
+<script src="../js/contacto.js"></script>
+</body>
+</html>

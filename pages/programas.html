@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programas | TUPLUSEDUCA</title>
+<meta name="description" content="Explora los programas de tecnología, creatividad y negocios.">
+<link rel="icon" href="../assets/colibri-mini.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas.css">
+<link rel="stylesheet" href="../css/animaciones.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<script>try{var t=localStorage.getItem("tema")||(matchMedia("(prefers-color-scheme: light)").matches?"claro":"oscuro");document.documentElement.dataset.tema=t;if(sessionStorage.getItem("tp-trans"))document.documentElement.classList.add("llega")}catch(e){document.documentElement.dataset.tema="oscuro"}</script>
+</head>
+<body data-pagina="programas" data-raiz="../">
+<main>
+  <section class="cabecera">
+    <p class="migas"><a href="../index.html">Inicio</a> / Programas</p>
+    <h1>Programas</h1>
+    <p class="lead">Elige un área, busca por nombre u ordena por precio y duración. Guarda tus favoritos con el corazón.</p>
+  </section>
+  <section class="seccion">
+    <div class="filtros" role="group" aria-label="Filtrar por área">
+      <button class="filtro activo" data-f="todos">Todos</button>
+      <button class="filtro" data-f="Tecnología">Tecnología</button>
+      <button class="filtro" data-f="Creatividad">Creatividad</button>
+      <button class="filtro" data-f="Negocios">Negocios</button>
+      <button class="filtro" data-f="fav">♥ Favoritos (<span id="nfav">0</span>)</button>
+    </div>
+    <div class="herramientas">
+      <input id="buscar" type="search" class="buscar" placeholder="Buscar un programa… (atajo: /)" aria-label="Buscar programa">
+      <select id="orden" aria-label="Ordenar programas">
+        <option value="">Orden recomendado</option>
+        <option value="p-asc">Precio: menor a mayor</option>
+        <option value="p-desc">Precio: mayor a menor</option>
+        <option value="h-asc">Duración: más corta primero</option>
+      </select>
+      <small id="total" aria-live="polite"></small>
+    </div>
+    <div class="cursos" id="cursos"></div>
+    <p class="vacio" id="vacio" hidden></p>
+  </section>
+</main>
+<dialog id="modal" aria-labelledby="m-titulo">
+  <button class="cerrar icono" id="cerrar" aria-label="Cerrar">✕</button>
+  <div class="modal-cabecera"><img id="m-img" class="curso-img" alt=""></div>
+  <small id="m-cat"></small>
+  <h3 id="m-titulo"></h3>
+  <p id="m-desc"></p>
+  <ul id="m-lista"></ul>
+  <div class="datos"><span id="m-dur"></span><span id="m-niv"></span><strong id="m-precio"></strong></div>
+  <label class="cuotas">Pagar en <select id="m-cuotas" aria-label="Número de cuotas"><option value="1">1 pago</option><option value="3">3 cuotas</option><option value="6">6 cuotas</option></select><strong id="m-cuota"></strong></label>
+  <div class="m-bot"><button class="boton" id="inscribir">Inscribirme</button><button class="boton sec" id="planear">Planificar</button><button class="boton sec" id="compartir">Compartir</button></div>
+</dialog>
+
+<script src="../js/datos.js"></script>
+<script src="../js/utilidades.js"></script>
+<script src="../js/colibri.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/comun.js"></script>
+<script src="../js/programas.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* TUPLUSEDUCA · animaciones.css */
+.logo .colibri{display:inline-block;vertical-align:middle;margin:-4px 8px 0 0;width:34px}
+@keyframes flotar{50%{margin-top:-14px}}
+@keyframes flotar2{50%{translate:0 -10px}}
+@keyframes entra{from{opacity:0;translate:0 24px}}
+.reveal{opacity:0;translate:0 28px;transition:opacity .7s,translate .7s}
+.reveal.ok{opacity:1;translate:0 0}
+.colibri{display:block;width:100%;height:auto;filter:drop-shadow(0 0 22px #d4af3766);animation:aleteo .28s ease-in-out infinite alternate}
+.ala{transform-box:fill-box;transform-origin:8% 92%;animation:aleteo .22s ease-in-out infinite alternate}
+.ala2{animation-delay:-.11s}
+@keyframes aleteo{from{transform:rotate(-14deg) scaleY(1)}to{transform:rotate(20deg) scaleY(.82)}}
+.colibri-btn{position:absolute;top:-2%;left:0;width:min(330px,72%);z-index:3;padding:0;background:none;border-radius:50%;animation:planear 3.2s ease-in-out infinite}
+.colibri-btn:hover{background:none;box-shadow:none;transform:none;filter:brightness(1.15)}
+@keyframes planear{0%,100%{translate:0 0;rotate:-3deg}50%{translate:10px -16px;rotate:2deg}}
+.logo .colibri{animation:none;filter:none}
+#seguidor{position:fixed;left:0;top:0;width:54px;z-index:40;pointer-events:none;opacity:0;transition:opacity .4s}
+#seguidor.ver{opacity:.95}
+#seguidor .colibri{transition:transform .25s}
+#seguidor:not(.der) .colibri{scale:-1 1}
+.vuelo{position:fixed;left:0;z-index:60;width:90px;pointer-events:none}
+.vuelo:not(.der) .colibri{scale:-1 1}
+.cursor{color:var(--dorado);font-style:normal;animation:parpadeo 1s steps(1) infinite}
+@keyframes parpadeo{50%{opacity:0}}
+.chispa{position:fixed;z-index:70;width:7px;height:7px;border-radius:50%;background:#f0cf65;pointer-events:none;box-shadow:0 0 8px #d4af37}
+
+/* Transición entre pantallas: cortina con colibrí */
+.cortina{position:fixed;inset:0;z-index:200;background:linear-gradient(105deg,#060e1a 55%,#123456);transform:translateX(-101%)}
+.cortina::after{content:"";position:absolute;top:0;bottom:0;right:0;width:3px;background:linear-gradient(transparent,#d4af37,transparent);box-shadow:0 0 30px 6px #d4af3777}
+.cortina.sale::after{right:auto;left:0}
+.ave{position:absolute;top:40%;right:-110px;width:min(230px,45vw)}
+.cortina.sale .ave{right:auto;left:-110px}
+.ave-in{animation:ola .95s ease-in-out}
+.ave .colibri{filter:drop-shadow(0 0 28px #d4af37aa)}
+@keyframes ola{0%,100%{translate:0 0;rotate:0deg}30%{translate:0 -60px;rotate:-6deg}65%{translate:0 34px;rotate:5deg}}
+html.llega body::before{content:"";position:fixed;inset:0;z-index:150;background:#060e1a}
+.perdido{min-height:70vh;display:grid;place-items:center;text-align:center;padding:60px 7%}
+.perdido .colibri-btn{position:static;width:min(260px,70%);margin:0 auto 10px;animation:planear 3.2s ease-in-out infinite}
+.perdido h1{font-size:clamp(34px,5vw,56px)}.perdido p{color:var(--sec);margin:14px 0 26px}
